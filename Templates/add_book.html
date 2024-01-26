@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>Add a New Book</h1>
+    <!-- Form for adding a new book with fields for title, author, and publication year -->
     <form method="post" action="{{ url_for('add_book') }}">
         <label for="title">Title:</label>
         <input type="text" id="title" name="title" required><br>
@@ -17,8 +18,8 @@
         <label for="publication_year">Publication Year:</label>
         <input type="number" id="publication_year" name="publication_year" required><br>
 
-        <input type="submit" value="Add Book">
+        <input type="submit" value="Add Book"> <!-- Submit button to add the new book -->
     </form>
-    <a href="{{ url_for('books') }}">Back to Book List</a>
+    <a href="{{ url_for('books') }}">Back to Book List</a> <!-- Link to the 'books' route -->
 </body>
 </html>
