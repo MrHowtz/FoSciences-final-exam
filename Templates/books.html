@@ -8,10 +8,11 @@
 <body>
     <h1>Book List</h1>
     <ul>
+         <!-- Iterate over each book in the 'books' list and display its information -->
         {% for book in books %}
             <li>{{ book.title }} by {{ book.author }} ({{ book.publication_year }})</li>
         {% endfor %}
     </ul>
-    <a href="{{ url_for('add_book') }}">Add a New Book</a>
+    <a href="{{ url_for('add_book') }}">Add a New Book</a> <!-- Link to the 'add_book' route -->
 </body>
 </html>
